@@ -1,0 +1,53 @@
+.global-width{
+    max-width: 1024px;
+    min-width:768px;
+    margin:0 auto
+}
+
+.global-width-narrow {
+    max-width:800px;
+}
+
+.global-width-mid {
+    max-width:900px;
+}
+
+.row {
+    margin-left:-10px;
+}
+
+.row::after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.row-gutter-large {
+    margin-left:-50px;
+}
+.row-gutter-large .col{
+    padding-left:50px;
+}
+
+.col {
+    float:left;
+    padding-left:10px;
+}
+
+.col-1-third {
+    width:33.3%;
+}
+
+.col-1-quarter {
+    width:25%;
+}
+
+
+
+.info-box-image {
+    display:block;
+    width:100%;
+    margin-bottom: 60px;
+}
