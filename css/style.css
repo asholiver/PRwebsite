@@ -2,6 +2,7 @@ body {
     font-family: niveau-grotesk, sans-serif;
 font-style: normal;
 font-weight:200;
+background-color:#EEECD5;
 
 }
 
@@ -80,7 +81,7 @@ font-weight:200;
     text-decoration:none;
     font-family: niveau-grotesk, sans-serif;
     font-weight:normal;
-    color:#000000;
+    color:#EEECD5;
     font-size:14px;
 
 }
