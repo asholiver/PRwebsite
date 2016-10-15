@@ -1,21 +1,21 @@
-header {
-    background-color:#836A71;
-}
-
-
 body {
     font-family: niveau-grotesk, sans-serif;
-font-style: normal;
-font-weight:200;
-background-color:#343536;
-
+    font-style: normal;
+    font-weight: 200;
+    background-color: #836A71;
 }
 
-footer {
-    background-color:#836A71;
-}
+
 .hidden {
     display:none;
+}
+
+
+@media (max-width:768px){
+    .class="l-grid" {
+    width:100%!important;
+
+    }
 }
 
 /*containers====================================*/
@@ -26,20 +26,18 @@ footer {
     margin:0 auto
 }
 
-.l-container__small {
-    max-width:800px;
-}
-
-.l-container__mid {
-    max-width:900px;
-}
-
 
 /*layouts =================================================*/
-.l-header {
-    padding:100px;
-    padding-bottom:80px;
+.c-section {
+    padding: 100px;
+    padding-bottom: 80px;
 }
+
+.c-section--alt {
+    background-color: #343536;
+}
+
+
 
 .l-grid {
     display: flex;
@@ -58,83 +56,108 @@ footer {
 }
 
 .l-grid__item--3-col {
-    width:25%;
+    width: 25%;
 }
 
-
-.l-grid--gutters-small {
-    marginaleft: -0.5rem
+/* Vertical Gutter */
+.l-grid--gutter-vertical-large {
+    margin-bottom: -60px;
 }
 
-.-grid--gutters-small .l-grid__item {
-    Padding-left: 0.5rem;
+.l-grid--gutter-vertical-large > .l-grid__item {
+    margin-bottom: 60px;
 }
+
+/* Horizontal Gutter */
+
+.l-grid--gutter-horizontal-large {
+    margin-left: -60px;
+}
+
+.l-grid--gutter-horizontal-large > .l-grid__item {
+    padding-left: 60px;
+}
+
 
 /*components===================================================*/
 
-.c-header {
-    background-color:#836A71;
-}
-
 .c-logo {
-    text-align:center;
-
+    display: block;
+    margin: 0 auto 80px;
+    width: 200px;
+    height: 237px;
 }
 
 .c-logo__image {
-
-width:200px;
-height:200px;
+    max-width: 100%;
 }
 
 .tagline {
-    text-align:center;
-    color:#EEECD5;
+    text-align: center;
+    color: #fff;
     font-family: niveau-grotesk, sans-serif;
-    font-weight:normal;
-    font-style:oblique;
-    padding:30px;
+    font-weight: normal;
+    font-style: oblique;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-left:30%;
+    margin-right:30%;
 
 }
 
-.roster {
-    text-align:center;
+.headline {
+    text-align: center;
+    color: #fff;
     font-family: niveau-grotesk, sans-serif;
-    font-weight:normal;
-    font-style:oblique;
-
+    font-weight: normal;
+    font-style: oblique;
+    border-bottom: 2px solid #836A71;
+    border-top: 2px solid #836A71;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-left:29%;
+    margin-right:29%;
+    letter-spacing:1px;
+    margin-bottom:60px;
 }
 
-.c-card{
-    position:relative;
-    margin-bottom: 60px;
-    padding:30px;
 
+/* Card
+===================================================*/
+
+.c-card {
+    position: relative;
 }
 
-.c-card__link{
-    text-decoration:none;
+.c-card__link {
+    text-decoration: none;
     font-family: niveau-grotesk, sans-serif;
-    font-weight:normal;
-    color:#EEECD5;
-    font-size:14px;
-
-
+    color: #fff;
+    font-size: 14px;
 }
 
 .c-card__image {
-    display:block;
-    width:100%;
-    height:230px;
-    border-radius:30px;
+    display: block;
+    width: 100%;
+    height: 230px;
+    border-radius: 10px 10px 0 0;
 }
 
 .c-card__title {
-    background-color:#836A71;
-    padding:10px;
-    border-radius:10px;
-    margin-top:10px;
+    border-bottom: 3px solid #836A71;
+    border-top: 3px solid #836A71;
+    padding: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
 
+.c-card:hover .c-card__title {
+    background-color: #836A71;
+    transition: 1s;
 }
 
 .social-small {
@@ -143,7 +166,8 @@ height:200px;
     height:25px;
     width:25px;
     position:absolute;
-    bottom:38px;
+    bottom:11px;
+
 }
 
 .social-small:hover{
@@ -152,21 +176,14 @@ height:200px;
 }
 
 .social-small__facebook {
-    right:62px;
+    right:32px;
 }
 
 .social-small__twitter {
-    right:37px;
+    right:5px;
 }
 
-.l-footer {
-    padding:100px;
-    padding-bottom:80px;
-}
 
-.l-footer__top {
-    padding-bottom:10px;
-}
 .social-large {
     margin-left:33.3%;
     fill:#B97C8D;
