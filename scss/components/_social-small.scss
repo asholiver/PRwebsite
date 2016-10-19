@@ -4,12 +4,14 @@
     height: 25px;
     margin-top: 25%;
     position: absolute;
-    transition: fill 0.3s ease;
+    transition: all 0.3s ease;
     width: 25px;
 }
 
 .social-small:hover {
     fill: $-color-quarternary;
+    height: 27px;
+    width: 27px;
 }
 
 .social-small__facebook {
