@@ -1,0 +1,24 @@
+{
+  "name": "Farewell-Transmission",
+  "description": "Farewell Transmission website",
+  "version": "1.0.0",
+  "scripts": {
+    "compile-scss": "node-sass --source-map true --output-style compressed -o css scss/style.scss",
+    "autoprefixer": "postcss -u autoprefixer -r css/*.css",
+    "watch": "onchange 'scss/**.scss' -- npm run build",
+    "build": "npm run compile-scss && npm run autoprefixer",
+    "start": "npm run build && parallelshell 'npm run watch'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asholiver/PRwebsite"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.4.2",
+    "onchange": "^2.2.0",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.1",
+    "stylelint": "^6.3.3"
+  }
+}

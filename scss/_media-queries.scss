@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+    .l-grid__item--6-col-tablet {
+        width: 50% !important;
+    }
+
+    .c-section {
+        padding: 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .l-grid__item--12-col-phone {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .c-section {
+        padding: 25px;
+    }
+}

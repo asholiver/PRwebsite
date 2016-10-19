@@ -1,0 +1,11 @@
+.social-large {
+    fill: $g-color-tertiary;
+    height: 50px;
+    margin-left: 33.3%;
+    transition: fill 0.3s ease;
+    width: 50px;
+}
+
+.social-large:hover {
+    fill: $-color-quarternary;
+}

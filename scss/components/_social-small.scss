@@ -1,0 +1,21 @@
+.social-small {
+    bottom: 11px;
+    fill: $g-color-tertiary;
+    height: 25px;
+    margin-top: 25%;
+    position: absolute;
+    transition: fill 0.3s ease;
+    width: 25px;
+}
+
+.social-small:hover {
+    fill: $-color-quarternary;
+}
+
+.social-small__facebook {
+    right: 32px;
+}
+
+.social-small__twitter {
+    right: 5px;
+}

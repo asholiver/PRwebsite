@@ -1,0 +1,31 @@
+.c-card {
+    position: relative;
+}
+
+.c-card__link {
+    color: $-color-quinary;
+    font-size: 14;
+    text-decoration: none;
+}
+
+.c-card__image {
+    border-radius: 10px 10px 0 0;
+    display: block;
+    height: 230px;
+    width: 100%;
+}
+
+.c-card__title {
+    border-bottom: 3px solid $g-color-primary;
+    border-top: 3px solid $g-color-primary;
+    font-weight: 300;
+    letter-spacing: 1;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.c-card:hover .c-card__title {
+    background-color: $g-color-primary;
+    transition: 1s;
+}
