@@ -1,15 +1,60 @@
 // Colours
 
+
+//blues
+
+$g-color-blue-700: #292f33;
+
 // Purples
 $g-color-purple-500: #836a71;
-$g-color-purple-300:#b97c8d;
+$g-color-purple-300: #b97c8d;
 // charcoal
 $g-color-charcoal-400: #343536;
+$g-color-charcoal-200: #86888a;
 //yellow
 $g-color-yellow-200:#eeecd5;
 //white
-$g-color-white-000:#fff;
+$g-color-white:#fff;
 
+//grey
+
+$g-color-grey-200: #e1e5e9;
+
+//greens
+
+$g-color-green-200: #b2e7af;
+
+$g-color-green-400: #63af5f;
+
+$g-color-green-600: #186d14;
+
+
+
+//cosmetics
+
+$g-border-thickness: 2px;
+
+
+//white theme
+
+// $g-color-primary: $g-color-white;
+
+// $g-color-secondary: $g-color-white;
+
+// $g-color-tertiary: $g-color-purple-300;
+
+// $-color-quarternary:$g-color-purple-500;
+
+// $-color-quinary:$g-color-charcoal-200;
+
+// $g-color-six:$g-color-charcoal-400;
+
+/* change _card border color from $g-color-primary to $g-color-six */
+
+
+//purple theme
+
+/* adjust tagline,headline and _card */
 
 $g-color-primary: $g-color-purple-500;
 
@@ -19,4 +64,16 @@ $g-color-tertiary: $g-color-purple-300;
 
 $-color-quarternary:$g-color-yellow-200;
 
-$-color-quinary:$g-color-white-000;
+$-color-quinary:$g-color-white;
+
+//green theme
+
+// $g-color-primary: $g-color-green-400;
+
+// $g-color-secondary: $g-color-green-200;
+
+// $g-color-tertiary: $g-color-green-600;
+
+// $-color-quarternary:$g-color-charcoal-400;
+
+// $-color-quinary:$g-color-charcoal-200;

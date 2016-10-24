@@ -1,3 +1,20 @@
+/*
+* Settings
+*/
+
+/*  for white theme: border color= $g-color-6
+    for all other themes : border color= $g-color-primary
+*/
+
+$c-card-background-color: $g-color-primary;
+
+$c-card-border: $g-border-thickness solid $g-color-primary;
+
+
+/*
+* Base
+*/
+
 .c-card {
     position: relative;
 }
@@ -8,36 +25,40 @@
     text-decoration: none;
 }
 
+
 .c-card__image {
-    border-radius: 10px 10px 0 0;
     display: block;
-    height: 230px;
-    transition: all 0.4s ease;
+    height: auto;
+    max-width: 100%;
+    transition: transform 0.4s ease;
     width: 100%;
 }
 
 .c-card__title {
-    border-bottom: 3px solid $g-color-primary;
-    border-top: 3px solid $g-color-primary;
+    border-bottom: $c-card-border;
+    border-top: $c-card-border;
     font-weight: 300;
     letter-spacing: 1;
     margin-top: 10px;
     padding: 10px;
-    text-shadow: 1px 2px $g-color-secondary;
     text-transform: uppercase;
-
 }
 
 .c-card:hover .c-card__title {
-    background-color: $g-color-primary;
-    font-weight: 320;
-    padding: 10.5px;
+    background-color: $c-card-background-color;
+    font-weight: 400;
     transition: 0.4s;
-    width: 101%;
+}
+
+// 1. Fixes bug in Chrome and Safari with border-radius and
+// scale: http://stackoverflow.com/questions/25891362/transition-on-transform-with-border-radius-and-overflow-hidden-doesnt-work-in-s
+.c-card__zoom-wrapper {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    transform: translateZ(0); // [1]
 }
 
 .c-card:hover .c-card__image {
     filter: grayscale(100%);
-    height: 235px;
-    width: 101%;
+    transform: scale(1.3);
 }

@@ -1,22 +1,24 @@
+/*
+for white theme : border; use $g-color-six
+for all others  : border; use $s-color-secondary
+*/
+
+$tagline-border: $g-border-thickness solid $g-color-secondary;
+
 .tagline {
-    border-bottom: 2px solid $g-color-charcoal-400;
-    border-top: 2px solid $g-color-charcoal-400;
+    border-bottom: $tagline-border;
+    border-top: $tagline-border;
     color: $-color-quinary;
     font-style: oblique;
     font-weight: normal;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: 0 auto;
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
-
-
-
-
+    width: 40%;
 }
 
-.headline {
-    border-bottom: 2px solid $g-color-primary;
-    border-top: 2px solid $g-color-primary;
+.tagline--alt {
+    border-color: $g-color-primary;
     margin-bottom: 60px;
 }
