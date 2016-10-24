@@ -1,12 +1,16 @@
-.social-large {
+.c-social {
+    display: block;
+    text-align: center;
+}
+
+.c-social__icon {
     fill: $g-color-tertiary;
     height: 50px;
-    margin-left: 33.3%;
     transition: all 0.3s ease;
     width: 50px;
 }
 
-.social-large:hover {
+.c-social:hover .c-social__icon {
     fill: $-color-quarternary;
     height: 52px;
     width: 52px;

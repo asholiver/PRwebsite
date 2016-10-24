@@ -3,7 +3,7 @@ for white theme : border; use $g-color-six
 for all others  : border; use $s-color-secondary
 */
 
-$tagline-border: $g-border-thickness solid $g-color-secondary;
+$tagline-border: $g-border-thickness solid $g-color-six;
 
 .tagline {
     border-bottom: $tagline-border;
