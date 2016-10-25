@@ -47,3 +47,18 @@
 .l-grid--align-center {
     justify-content: center;
 }
+
+// Media Queries
+
+@include bp(medium) {
+    .l-grid__item--6-col-tablet {
+        width: 50% !important;
+    }
+}
+
+@include bp(small) {
+    .l-grid__item--12-col-phone {
+        width: 100% !important;
+    }
+}
+

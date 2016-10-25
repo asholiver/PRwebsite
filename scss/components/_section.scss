@@ -8,4 +8,15 @@
 }
 
 
+// media queries
+@include bp(medium) {
+    .c-section {
+        padding: 25px;
+    }
+}
 
+@include bp(x-small) {
+    .c-section {
+        padding: 25px;
+    }
+}

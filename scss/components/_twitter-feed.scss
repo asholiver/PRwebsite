@@ -1,6 +1,15 @@
 .c-twitter-feed {
-    border: 2px solid $-color-quinary;
+    // border: 2px solid $-color-quinary;
     display: block;
     margin: 0 auto;
     max-width: 300px;
+}
+
+// Media Queries
+
+@include bp(small) {
+    .c-twitter-feed {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }

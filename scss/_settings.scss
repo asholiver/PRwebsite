@@ -11,6 +11,7 @@ $g-color-purple-300: #b97c8d;
 // charcoal
 $g-color-charcoal-400: #343536;
 $g-color-charcoal-200: #86888a;
+$g-color-charcoal-50: #f2f4f7;
 //yellow
 $g-color-yellow-200:#eeecd5;
 //white
@@ -37,17 +38,17 @@ $g-border-thickness: 2px;
 
 //white theme
 
-$g-color-primary: $g-color-white;
+$g-color-primary: $g-color-charcoal-50;
 
 $g-color-secondary: $g-color-white;
 
-$g-color-tertiary: $g-color-purple-300;
+$g-color-tertiary: $g-color-charcoal-200;
 
 $-color-quarternary:$g-color-purple-500;
 
-$-color-quinary:$g-color-charcoal-200;
+$-color-quinary:$g-color-charcoal-400;
 
-$g-color-six:$g-color-charcoal-400;
+$g-color-six:$g-color-purple-300;
 
 /* change _card border color from $g-color-primary to $g-color-six */
 

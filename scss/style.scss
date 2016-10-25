@@ -1,6 +1,12 @@
 /* base */
 
+/* media queries */
+
+
+
 @import 'settings';
+
+@import 'media-queries';
 
 @import 'helpers';
 
@@ -30,6 +36,4 @@
 
 @import 'components/twitter-feed';
 
-/* media queries */
 
-@import 'media-queries';
