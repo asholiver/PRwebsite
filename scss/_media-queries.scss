@@ -1,30 +1,30 @@
-@media (max-width: 1023px) {
-    .l-grid__item--6-col-tablet {
-        width: 50% !important;
+// bp = breakpoint
+@mixin bp($screenSize) {
+
+    $bp-x-small: "(max-width: 500px)";
+    $bp-small: "(max-width: 760px)";
+    $bp-medium: "(max-width: 1023px)";
+
+    @if $screenSize == medium {
+        @media #{$bp-small} {
+            @content;
+        }
     }
-
-    .c-section {
-        padding: 50px;
+    @else if $screenSize == small {
+        @media #{$bp-small} {
+            @content;
+        }
     }
-}
-
-
-
-@media (max-width: 760px) {
-    .l-grid__item--12-col-phone {
-        width: 100% !important;
-    }
-
-    .c-twitter-feed {
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    .c-section {
-        padding: 25px;
+    @else if $screenSize == x-small {
+        @media #{$bp-x-small}  {
+            @content;
+        }
     }
 }
+
+
+
+
+
 
 
