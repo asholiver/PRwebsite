@@ -1,19 +1,18 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+	<main class="c-section c-section--alt" role="main">
+		<section class="l-container">
 
-			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+            <h1 class="tagline tagline--alt">Roster<h1>
 
-			<?php get_template_part('loop'); ?>
+            <ul class="l-grid l-grid--gutter-vertical-large l-grid--gutter-horizontal-large">
 
-			<?php get_template_part('pagination'); ?>
+			 <?php get_template_part('loop'); ?>
+
+            </ul>
 
 		</section>
 		<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

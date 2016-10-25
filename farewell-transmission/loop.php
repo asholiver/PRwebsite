@@ -1,43 +1,43 @@
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<?php
 
-	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    $args = array( 'post_type' => 'bands',);
+    $loop = new WP_Query( $args );
 
-		<!-- post thumbnail -->
-		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-			</a>
-		<?php endif; ?>
-		<!-- /post thumbnail -->
+    while ( $loop->have_posts() ) : $loop->the_post();
+?>
 
-		<!-- post title -->
-		<h2>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-		</h2>
-		<!-- /post title -->
+	<li id="post-<?php the_ID(); ?>" class="l-grid__item l-grid__item--4-col l-grid__item--12-col-phone l-grid__item--6-col-tablet">
+        <div class="c-card">
+            <a href="<?php the_field('band_url'); ?>" title="<?php the_title(); ?>" class="c-card__link">
 
-		<!-- post details -->
-		<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-		<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-		<!-- /post details -->
+                <div class="c-card__zoom-wrapper">
+                    <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+                    <?php the_post_thumbnail('full', array( 'class' => 'c-card__image' )); ?>
+                    <?php endif; ?>
+                </div>
 
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-
-		<?php edit_post_link(); ?>
-
-	</article>
-	<!-- /article -->
+                <h3 class="c-card__title">
+                    <?php the_title(); ?>
+                </h3>
+            </a>
+            <ul>
+                <li>
+                    <a href="<?php the_field('facebook_link'); ?>">
+                        <svg class="social-small social-small__facebook">
+                           <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php the_field('twitter_link'); ?>">
+                        <svg class="social-small social-small__twitter">
+                           <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
 
 <?php endwhile; ?>
 
-<?php else: ?>
-
-	<!-- article -->
-	<article>
-		<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-	</article>
-	<!-- /article -->
-
-<?php endif; ?>

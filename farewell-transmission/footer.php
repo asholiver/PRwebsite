@@ -1,30 +1,37 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+        <footer class="c-section">
+            <ul class="l-grid l-grid--align-middle l-grid--align-center">
+                <li class="l-grid__item l-grid__item--4-col l-grid__item--12-col-phone">
+                    <a class="c-social" href="http://www.facebook.com/farewelltransmissionPR">
+                        <svg class="c-social__icon">
+                        <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+                <li class="l-grid__item l-grid__item--4-col l-grid__item--12-col-phone">
+                    <div class="c-twitter-feed">
+                        <!-- twitter feed dark -->
 
-			</footer>
-			<!-- /footer -->
+                        <!-- <a class="twitter-timeline" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/FRWLLTRNSMSSNPR">Tweets by FRWLLTRNSMSSNPR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
-		</div>
-		<!-- /wrapper -->
+                        <!-- twitter feed light -->
 
-		<?php wp_footer(); ?>
+                        <a class="twitter-timeline" data-width="300" data-height="300" data-theme="light" href="https://twitter.com/FRWLLTRNSMSSNPR">Tweets by FRWLLTRNSMSSNPR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-		<!-- analytics -->
-		<script>
-		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-		ga('send', 'pageview');
-		</script>
+                    </div>
+                </li>
 
-	</body>
+                <li class="l-grid__item l-grid__item--4-col l-grid__item--12-col-phone">
+                    <a class="c-social" href="mailto:info@farewelltransmissionprcom">
+                        <svg class="c-social__icon">
+                            <use xlink:href="#email"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </footer>
+
+        <?php wp_footer(); ?>
+    </body>
 </html>
