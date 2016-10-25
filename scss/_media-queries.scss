@@ -6,7 +6,7 @@
     $bp-medium: "(max-width: 1023px)";
 
     @if $screenSize == medium {
-        @media #{$bp-small} {
+        @media #{$bp-medium} {
             @content;
         }
     }
