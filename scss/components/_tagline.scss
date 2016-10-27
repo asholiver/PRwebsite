@@ -3,15 +3,17 @@ for white theme : border; use $g-color-six
 for all others  : border; use $s-color-secondary
 */
 
-$tagline-border: $g-border-thickness solid $g-color-six;
+$tagline-border: $g-border-thickness solid $g-color-secondary;
 
 .tagline {
     border-bottom: $tagline-border;
     border-top: $tagline-border;
     color: $-color-quinary;
+    font-size: 18px;
     font-style: oblique;
     font-weight: normal;
     margin: 0 auto;
+    min-width: 300px;
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;

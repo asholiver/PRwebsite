@@ -38,17 +38,17 @@ $g-border-thickness: 2px;
 
 //white theme
 
-$g-color-primary: $g-color-charcoal-50;
+// $g-color-primary: $g-color-charcoal-50;
 
-$g-color-secondary: $g-color-white;
+// $g-color-secondary: $g-color-white;
 
-$g-color-tertiary: $g-color-charcoal-200;
+// $g-color-tertiary: $g-color-charcoal-200;
 
-$-color-quarternary:$g-color-purple-500;
+// $-color-quarternary:$g-color-purple-500;
 
-$-color-quinary:$g-color-charcoal-400;
+// $-color-quinary:$g-color-charcoal-400;
 
-$g-color-six:$g-color-purple-300;
+// $g-color-six:$g-color-purple-300;
 
 /* change _card border color from $g-color-primary to $g-color-six */
 
@@ -57,15 +57,17 @@ $g-color-six:$g-color-purple-300;
 
 /* adjust tagline,headline and _card */
 
-// $g-color-primary: $g-color-purple-500;
+$g-color-primary: $g-color-purple-500;
 
-// $g-color-secondary: $g-color-charcoal-400;
+$g-color-secondary: $g-color-charcoal-400;
 
-// $g-color-tertiary: $g-color-purple-300;
+$g-color-tertiary: $g-color-purple-300;
 
-// $-color-quarternary:$g-color-yellow-200;
+$-color-quarternary:$g-color-yellow-200;
 
-// $-color-quinary:$g-color-white;
+$-color-quinary:$g-color-white;
+
+$g-color-six:$g-color-purple-500;
 
 //green theme
 
