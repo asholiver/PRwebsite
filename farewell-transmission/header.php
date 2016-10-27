@@ -5,8 +5,16 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
         <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/img/icons/manifest.json">
+        <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico">
+        <meta name="msapplication-config" content="<?php echo get_template_directory_uri(); ?>/img/icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +47,7 @@
         <header class="c-section"  role="banner">
 
             <h1 class="c-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/fwt_logo_white.svg" class="c-logo__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/farewell_transmission_logo_dark.svg" class="c-logo__image">
             </h1>
 
             <p class="tagline"><?php echo get_bloginfo( 'description' ); ?></p>
