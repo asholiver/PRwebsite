@@ -47,7 +47,7 @@
         <header class="c-section"  role="banner">
             <div class="l-container">
                 <h1 class="c-logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/fwt_logo_white.svg" class="c-logo__image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/farewell_transmission_logo_pink.png" class="c-logo__image">
                 </h1>
 
                 <p class="tagline"><?php echo get_bloginfo( 'description' ); ?></p>

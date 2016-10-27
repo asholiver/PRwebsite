@@ -1,6 +1,6 @@
 <?php
 
-    $args = array( 'post_type' => 'bands',);
+    $args = array( 'post_type' => 'bands', 'orderby' => 'title', 'order'   => 'ASC');
     $loop = new WP_Query( $args );
 
     while ( $loop->have_posts() ) : $loop->the_post();
