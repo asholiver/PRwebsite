@@ -6,7 +6,7 @@
     for all other themes : border color= $g-color-primary
 */
 
-$c-card-background-color: $g-color-six;
+$c-card-background-color: $g-color-tertiary;
 
 $c-card-border: $g-border-thickness solid $g-color-primary;
 
@@ -20,7 +20,7 @@ $c-card-border: $g-border-thickness solid $g-color-primary;
 }
 
 .c-card__link {
-    color: $-color-quinary;
+    color: $g-color-quinary;
     text-decoration: none;
 }
 
@@ -36,8 +36,8 @@ $c-card-border: $g-border-thickness solid $g-color-primary;
 .c-card__title {
     border-bottom: $c-card-border;
     border-top: $c-card-border;
-    font-weight: 300;
     font-size: 14px;
+    font-weight: 300;
     margin-top: 10px;
     padding: 10px;
     text-transform: uppercase;
@@ -45,8 +45,13 @@ $c-card-border: $g-border-thickness solid $g-color-primary;
 
 .c-card:hover .c-card__title {
     background-color: $c-card-background-color;
+    color: $g-color-white;
     font-weight: 400;
     transition: 0.4s;
+}
+
+.c-card:hover .social-small {
+    fill: $g-color-primary;
 }
 
 // 1. Fixes bug in Chrome and Safari with border-radius and
