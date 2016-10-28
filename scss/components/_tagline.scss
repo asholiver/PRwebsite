@@ -24,3 +24,10 @@ $tagline-border: $g-border-thickness solid $g-color-secondary;
     border-color: $g-color-primary;
     margin-bottom: 60px;
 }
+
+@include bp(small) {
+    .tagline {
+        min-width: auto;
+        width: 100% !important;
+    }
+}
