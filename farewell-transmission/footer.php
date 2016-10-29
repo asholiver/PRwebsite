@@ -33,6 +33,13 @@
                 </ul>
             </div>
 
+            <address class="address">
+                Studio 7, Acklam Workspace,
+                10 Acklam Rd,
+                London,
+                W10 5QZ.
+            </address>
+
         </footer>
 
         <?php wp_footer(); ?>
