@@ -33,16 +33,18 @@
             </div>
 
             <div class="c-copyright">
-                <p>&copy; <?php
-                  $fromYear = 2016;
-                  $thisYear = (int)date('Y');
-                  echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> - Farewell Transmission PR.</p>
                 <address>
                     Studio 7, Acklam Workspace,
                     10 Acklam Rd,
                     London,
                     W10 5QZ.
                 </address>
+
+                <p>&copy; <?php
+                  $fromYear = 2016;
+                  $thisYear = (int)date('Y');
+                  echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> - Farewell Transmission PR.</p>
+
             </div>
         </footer>
 
