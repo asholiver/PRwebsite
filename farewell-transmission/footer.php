@@ -33,7 +33,7 @@
             </div>
 
             <div class="c-copyright">
-                <address>
+                <address class="c-address">
                     Studio 7, Acklam Workspace,
                     10 Acklam Rd,
                     London,
