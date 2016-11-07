@@ -4,8 +4,7 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
         <!-- favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/icons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon-32x32.png" sizes="32x32">

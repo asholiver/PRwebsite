@@ -9,15 +9,15 @@ $tagline-border: $g-border-thickness solid $g-color-secondary;
     border-bottom: $tagline-border;
     border-top: $tagline-border;
     color: $g-color-charcoal-200;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 900;
     margin: 0 auto;
     min-width: 300px;
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
     width: 40%;
 }
 
