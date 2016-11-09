@@ -43,7 +43,7 @@
                 <p>&copy; <?php
                   $fromYear = 2016;
                   $thisYear = (int)date('Y');
-                  echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> - Farewell Transmission PR.</p>
+                  echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> - Farewell Transmission PR Ltd.</p>
 
             </div>
         </footer>
