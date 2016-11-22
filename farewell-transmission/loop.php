@@ -16,7 +16,7 @@
                     <?php endif; ?>
                 </div>
 
-                <h3 class="c-card__title">
+                <h3 class="c-card__title" <?php if (strlen(get_the_title()) > 20) { ?>style="font-size: 11px"<?php } ?>>
                     <?php the_title(); ?>
                 </h3>
             </a>
