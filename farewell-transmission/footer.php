@@ -34,10 +34,7 @@
 
             <div class="c-copyright">
                 <address class="c-address">
-                    Studio 7, Acklam Workspace,
-                    10 Acklam Rd,
-                    London,
-                    W10 5QZ.
+                    Farewell Transmission PR, c/o Full Time Hobby, 18 Ashwin Street, London, E8 3DL.
                 </address>
 
                 <p>&copy; <?php
