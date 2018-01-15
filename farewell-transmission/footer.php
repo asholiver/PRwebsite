@@ -33,10 +33,6 @@
             </div>
 
             <div class="c-copyright">
-                <address class="c-address">
-                    Farewell Transmission PR, c/o Full Time Hobby, 18 Ashwin Street, London, E8 3DL.
-                </address>
-
                 <p>&copy; <?php
                   $fromYear = 2016;
                   $thisYear = (int)date('Y');
